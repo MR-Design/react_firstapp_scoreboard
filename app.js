@@ -1,15 +1,13 @@
-const disc = 'I just Learned how to create a Reactnode and render it in to the dom';
-const myTitleID ='main-title';
-const name = 'Moh';
-const header = (
-    <header>
-    <h1 id={myTitleID}> {name}'s First react Element </h1>
-    <p> {disc}</p>
-    </header>
-);
-
+function Header(){
+    return(
+        <header>
+            <h1> Scoreboard</h1>
+            <span classname="stats">Player :1</span>
+        </header>
+    );
+}
 
 ReactDOM.render(
-    header,
+    <Header />,
     document.getElementById('root')
 );
